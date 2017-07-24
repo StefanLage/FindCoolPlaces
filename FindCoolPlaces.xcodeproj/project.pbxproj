@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8DADD001F26705000432E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADCFF1F26705000432E03 /* AppDelegate.swift */; };
+		F8DADD071F26705000432E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DADD061F26705000432E03 /* Assets.xcassets */; };
+		F8DADD0A1F26705000432E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DADD081F26705000432E03 /* LaunchScreen.storyboard */; };
+		F8DADD151F26705000432E03 /* FindCoolPlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADD141F26705000432E03 /* FindCoolPlacesTests.swift */; };
+		F8DADD201F26705000432E03 /* FindCoolPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADD1F1F26705000432E03 /* FindCoolPlacesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8DADD111F26705000432E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8DADCF41F26705000432E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DADCFB1F26705000432E03;
+			remoteInfo = FindCoolPlaces;
+		};
+		F8DADD1C1F26705000432E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8DADCF41F26705000432E03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DADCFB1F26705000432E03;
+			remoteInfo = FindCoolPlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8DADCFC1F26705000432E03 /* FindCoolPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCoolPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DADCFF1F26705000432E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8DADD061F26705000432E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8DADD091F26705000432E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8DADD0B1F26705000432E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DADD101F26705000432E03 /* FindCoolPlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoolPlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DADD141F26705000432E03 /* FindCoolPlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoolPlacesTests.swift; sourceTree = "<group>"; };
+		F8DADD161F26705000432E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DADD1B1F26705000432E03 /* FindCoolPlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoolPlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DADD1F1F26705000432E03 /* FindCoolPlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoolPlacesUITests.swift; sourceTree = "<group>"; };
+		F8DADD211F26705000432E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8DADCF91F26705000432E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADD0D1F26705000432E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADD181F26705000432E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8DADCF31F26705000432E03 = {
+			isa = PBXGroup;
+			children = (
+				F8DADCFE1F26705000432E03 /* FindCoolPlaces */,
+				F8DADD131F26705000432E03 /* FindCoolPlacesTests */,
+				F8DADD1E1F26705000432E03 /* FindCoolPlacesUITests */,
+				F8DADCFD1F26705000432E03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8DADCFD1F26705000432E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8DADCFC1F26705000432E03 /* FindCoolPlaces.app */,
+				F8DADD101F26705000432E03 /* FindCoolPlacesTests.xctest */,
+				F8DADD1B1F26705000432E03 /* FindCoolPlacesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8DADCFE1F26705000432E03 /* FindCoolPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				F8DADCFF1F26705000432E03 /* AppDelegate.swift */,
+				F8DADD061F26705000432E03 /* Assets.xcassets */,
+				F8DADD081F26705000432E03 /* LaunchScreen.storyboard */,
+				F8DADD0B1F26705000432E03 /* Info.plist */,
+			);
+			path = FindCoolPlaces;
+			sourceTree = "<group>";
+		};
+		F8DADD131F26705000432E03 /* FindCoolPlacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8DADD141F26705000432E03 /* FindCoolPlacesTests.swift */,
+				F8DADD161F26705000432E03 /* Info.plist */,
+			);
+			path = FindCoolPlacesTests;
+			sourceTree = "<group>";
+		};
+		F8DADD1E1F26705000432E03 /* FindCoolPlacesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8DADD1F1F26705000432E03 /* FindCoolPlacesUITests.swift */,
+				F8DADD211F26705000432E03 /* Info.plist */,
+			);
+			path = FindCoolPlacesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8DADCFB1F26705000432E03 /* FindCoolPlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DADD241F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlaces" */;
+			buildPhases = (
+				F8DADCF81F26705000432E03 /* Sources */,
+				F8DADCF91F26705000432E03 /* Frameworks */,
+				F8DADCFA1F26705000432E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindCoolPlaces;
+			productName = FindCoolPlaces;
+			productReference = F8DADCFC1F26705000432E03 /* FindCoolPlaces.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8DADD0F1F26705000432E03 /* FindCoolPlacesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DADD271F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlacesTests" */;
+			buildPhases = (
+				F8DADD0C1F26705000432E03 /* Sources */,
+				F8DADD0D1F26705000432E03 /* Frameworks */,
+				F8DADD0E1F26705000432E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DADD121F26705000432E03 /* PBXTargetDependency */,
+			);
+			name = FindCoolPlacesTests;
+			productName = FindCoolPlacesTests;
+			productReference = F8DADD101F26705000432E03 /* FindCoolPlacesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8DADD1A1F26705000432E03 /* FindCoolPlacesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DADD2A1F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlacesUITests" */;
+			buildPhases = (
+				F8DADD171F26705000432E03 /* Sources */,
+				F8DADD181F26705000432E03 /* Frameworks */,
+				F8DADD191F26705000432E03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8DADD1D1F26705000432E03 /* PBXTargetDependency */,
+			);
+			name = FindCoolPlacesUITests;
+			productName = FindCoolPlacesUITests;
+			productReference = F8DADD1B1F26705000432E03 /* FindCoolPlacesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8DADCF41F26705000432E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Stefan Lage";
+				TargetAttributes = {
+					F8DADCFB1F26705000432E03 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3XG2NZNAV2;
+						ProvisioningStyle = Automatic;
+					};
+					F8DADD0F1F26705000432E03 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3XG2NZNAV2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8DADCFB1F26705000432E03;
+					};
+					F8DADD1A1F26705000432E03 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3XG2NZNAV2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F8DADCFB1F26705000432E03;
+					};
+				};
+			};
+			buildConfigurationList = F8DADCF71F26705000432E03 /* Build configuration list for PBXProject "FindCoolPlaces" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8DADCF31F26705000432E03;
+			productRefGroup = F8DADCFD1F26705000432E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8DADCFB1F26705000432E03 /* FindCoolPlaces */,
+				F8DADD0F1F26705000432E03 /* FindCoolPlacesTests */,
+				F8DADD1A1F26705000432E03 /* FindCoolPlacesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8DADCFA1F26705000432E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DADD0A1F26705000432E03 /* LaunchScreen.storyboard in Resources */,
+				F8DADD071F26705000432E03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADD0E1F26705000432E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADD191F26705000432E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8DADCF81F26705000432E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DADD001F26705000432E03 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADD0C1F26705000432E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DADD151F26705000432E03 /* FindCoolPlacesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DADD171F26705000432E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DADD201F26705000432E03 /* FindCoolPlacesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8DADD121F26705000432E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8DADCFB1F26705000432E03 /* FindCoolPlaces */;
+			targetProxy = F8DADD111F26705000432E03 /* PBXContainerItemProxy */;
+		};
+		F8DADD1D1F26705000432E03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8DADCFB1F26705000432E03 /* FindCoolPlaces */;
+			targetProxy = F8DADD1C1F26705000432E03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8DADD081F26705000432E03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8DADD091F26705000432E03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8DADD221F26705000432E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8DADD231F26705000432E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8DADD251F26705000432E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3XG2NZNAV2;
+				INFOPLIST_FILE = FindCoolPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlaces;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F8DADD261F26705000432E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3XG2NZNAV2;
+				INFOPLIST_FILE = FindCoolPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlaces;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F8DADD281F26705000432E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3XG2NZNAV2;
+				INFOPLIST_FILE = FindCoolPlacesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlacesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCoolPlaces.app/FindCoolPlaces";
+			};
+			name = Debug;
+		};
+		F8DADD291F26705000432E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3XG2NZNAV2;
+				INFOPLIST_FILE = FindCoolPlacesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlacesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCoolPlaces.app/FindCoolPlaces";
+			};
+			name = Release;
+		};
+		F8DADD2B1F26705000432E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3XG2NZNAV2;
+				INFOPLIST_FILE = FindCoolPlacesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlacesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindCoolPlaces;
+			};
+			name = Debug;
+		};
+		F8DADD2C1F26705000432E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3XG2NZNAV2;
+				INFOPLIST_FILE = FindCoolPlacesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlacesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindCoolPlaces;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8DADCF71F26705000432E03 /* Build configuration list for PBXProject "FindCoolPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DADD221F26705000432E03 /* Debug */,
+				F8DADD231F26705000432E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DADD241F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DADD251F26705000432E03 /* Debug */,
+				F8DADD261F26705000432E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8DADD271F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlacesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DADD281F26705000432E03 /* Debug */,
+				F8DADD291F26705000432E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8DADD2A1F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlacesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DADD2B1F26705000432E03 /* Debug */,
+				F8DADD2C1F26705000432E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8DADCF41F26705000432E03 /* Project object */;
+}
