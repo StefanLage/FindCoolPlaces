@@ -36,7 +36,7 @@ class FCPApiClientTests: XCTestCase {
             }
 
             // Wait for it...
-            self.waitForExpectations(timeout: 10.0) { error in
+            self.waitForExpectations(timeout: 5) { error in
                 print ("testGetVenues - Time out")
             }
         }
