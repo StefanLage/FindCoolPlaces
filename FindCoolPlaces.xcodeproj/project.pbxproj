@@ -10,8 +10,6 @@
 		F8DADD001F26705000432E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADCFF1F26705000432E03 /* AppDelegate.swift */; };
 		F8DADD071F26705000432E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DADD061F26705000432E03 /* Assets.xcassets */; };
 		F8DADD0A1F26705000432E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DADD081F26705000432E03 /* LaunchScreen.storyboard */; };
-		F8DADD151F26705000432E03 /* FindCoolPlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADD141F26705000432E03 /* FindCoolPlacesTests.swift */; };
-		F8DADD201F26705000432E03 /* FindCoolPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADD1F1F26705000432E03 /* FindCoolPlacesUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +36,8 @@
 		F8DADD091F26705000432E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8DADD0B1F26705000432E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DADD101F26705000432E03 /* FindCoolPlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoolPlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8DADD141F26705000432E03 /* FindCoolPlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoolPlacesTests.swift; sourceTree = "<group>"; };
 		F8DADD161F26705000432E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DADD1B1F26705000432E03 /* FindCoolPlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoolPlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8DADD1F1F26705000432E03 /* FindCoolPlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoolPlacesUITests.swift; sourceTree = "<group>"; };
 		F8DADD211F26705000432E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F87E901C1F2744D60085E574 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8DADD061F26705000432E03 /* Assets.xcassets */,
+				F8DADD081F26705000432E03 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F8DADCF31F26705000432E03 = {
 			isa = PBXGroup;
 			children = (
@@ -93,9 +98,8 @@
 		F8DADCFE1F26705000432E03 /* FindCoolPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				F87E901C1F2744D60085E574 /* Resources */,
 				F8DADCFF1F26705000432E03 /* AppDelegate.swift */,
-				F8DADD061F26705000432E03 /* Assets.xcassets */,
-				F8DADD081F26705000432E03 /* LaunchScreen.storyboard */,
 				F8DADD0B1F26705000432E03 /* Info.plist */,
 			);
 			path = FindCoolPlaces;
@@ -104,7 +108,6 @@
 		F8DADD131F26705000432E03 /* FindCoolPlacesTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8DADD141F26705000432E03 /* FindCoolPlacesTests.swift */,
 				F8DADD161F26705000432E03 /* Info.plist */,
 			);
 			path = FindCoolPlacesTests;
@@ -113,7 +116,6 @@
 		F8DADD1E1F26705000432E03 /* FindCoolPlacesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F8DADD1F1F26705000432E03 /* FindCoolPlacesUITests.swift */,
 				F8DADD211F26705000432E03 /* Info.plist */,
 			);
 			path = FindCoolPlacesUITests;
@@ -263,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DADD151F26705000432E03 /* FindCoolPlacesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DADD201F26705000432E03 /* FindCoolPlacesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +502,7 @@
 				F8DADD261F26705000432E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8DADD271F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				F8DADD291F26705000432E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8DADD2A1F26705000432E03 /* Build configuration list for PBXNativeTarget "FindCoolPlacesUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +520,7 @@
 				F8DADD2C1F26705000432E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
