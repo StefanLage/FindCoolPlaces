@@ -1,0 +1,6 @@
+osx_image: xcode8.3
+language: objective-c
+script:
+        - xcodebuild test -project FindCoolPlaces.xcodeproj -scheme FindCoolPlaces -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3.1'
+before_install:
+        - bash update_carthage.sh 0.17

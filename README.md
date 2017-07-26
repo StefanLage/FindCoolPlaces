@@ -1,4 +1,5 @@
-# FindCoolPlace
+# FindCoolPlaces
+[![Build Status](https://travis-ci.org/StefanLage/FindCoolPlaces.svg?branch=Dev)](https://travis-ci.org/StefanLage/FindCoolPlaces)
 
 ## Requirements
 
