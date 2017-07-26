@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80FC5EA1F294A86007E8920 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80FC5E91F294A86007E8920 /* Dynamic.swift */; };
 		F87E90211F27486A0085E574 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E901E1F27486A0085E574 /* Alamofire.framework */; };
 		F87E90221F27486A0085E574 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E901F1F27486A0085E574 /* AlamofireObjectMapper.framework */; };
 		F87E90231F27486A0085E574 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E90201F27486A0085E574 /* ObjectMapper.framework */; };
@@ -19,7 +20,8 @@
 		F87E90391F278FFE0085E574 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87E90381F278FFE0085E574 /* Item.swift */; };
 		F87E903B1F279E5F0085E574 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87E903A1F279E5F0085E574 /* Group.swift */; };
 		F87E903D1F27A0770085E574 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87E903C1F27A0770085E574 /* Location.swift */; };
-		F87E907B1F2939CA0085E574 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87E907A1F2939CA0085E574 /* Dynamic.swift */; };
+		F87E907F1F293C980085E574 /* FCPPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87E907E1F293C980085E574 /* FCPPlacesViewModel.swift */; };
+		F87E90811F2946390085E574 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87E90801F2946390085E574 /* PlacesViewModel.swift */; };
 		F8DADD001F26705000432E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DADCFF1F26705000432E03 /* AppDelegate.swift */; };
 		F8DADD071F26705000432E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8DADD061F26705000432E03 /* Assets.xcassets */; };
 		F8DADD0A1F26705000432E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8DADD081F26705000432E03 /* LaunchScreen.storyboard */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F80FC5E91F294A86007E8920 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dynamic.swift; path = Types/Dynamic.swift; sourceTree = "<group>"; };
 		F87E901E1F27486A0085E574 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F87E901F1F27486A0085E574 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		F87E90201F27486A0085E574 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -56,7 +59,8 @@
 		F87E90381F278FFE0085E574 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Model/Item.swift; sourceTree = "<group>"; };
 		F87E903A1F279E5F0085E574 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Model/Group.swift; sourceTree = "<group>"; };
 		F87E903C1F27A0770085E574 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
-		F87E907A1F2939CA0085E574 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dynamic.swift; path = Types/Dynamic.swift; sourceTree = "<group>"; };
+		F87E907E1F293C980085E574 /* FCPPlacesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPPlacesViewModel.swift; sourceTree = "<group>"; };
+		F87E90801F2946390085E574 /* PlacesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesViewModel.swift; path = ViewModels/PlacesViewModel.swift; sourceTree = "<group>"; };
 		F8DADCFC1F26705000432E03 /* FindCoolPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCoolPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DADCFF1F26705000432E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8DADD061F26705000432E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80FC5E81F294A7B007E8920 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				F80FC5E91F294A86007E8920 /* Dynamic.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
 		F87E901C1F2744D60085E574 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +154,19 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		F87E90791F2939600085E574 /* Types */ = {
+		F87E907C1F293BC90085E574 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F87E907A1F2939CA0085E574 /* Dynamic.swift */,
+				F87E90801F2946390085E574 /* PlacesViewModel.swift */,
 			);
-			name = Types;
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		F87E907D1F293BD20085E574 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		F8DADCF31F26705000432E03 = {
@@ -174,7 +193,9 @@
 		F8DADCFE1F26705000432E03 /* FindCoolPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				F87E90791F2939600085E574 /* Types */,
+				F80FC5E81F294A7B007E8920 /* Types */,
+				F87E907D1F293BD20085E574 /* Views */,
+				F87E907C1F293BC90085E574 /* ViewModels */,
 				F87E90331F2767540085E574 /* Extensions */,
 				F87E90301F275DE20085E574 /* Model */,
 				F87E90271F274A7B0085E574 /* Api */,
@@ -193,6 +214,7 @@
 				F87E90251F2749F20085E574 /* FCPApiClientTests.swift */,
 				F87E90241F2749F20085E574 /* FindCoolPlacesTests-Bridging-Header.h */,
 				F87E90361F2783FD0085E574 /* StringExtensionsTests.swift */,
+				F87E907E1F293C980085E574 /* FCPPlacesViewModel.swift */,
 			);
 			path = FindCoolPlacesTests;
 			sourceTree = "<group>";
@@ -363,9 +385,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F87E903B1F279E5F0085E574 /* Group.swift in Sources */,
+				F80FC5EA1F294A86007E8920 /* Dynamic.swift in Sources */,
 				F87E902B1F274AA50085E574 /* FCPApi.swift in Sources */,
 				F87E903D1F27A0770085E574 /* Location.swift in Sources */,
-				F87E907B1F2939CA0085E574 /* Dynamic.swift in Sources */,
+				F87E90811F2946390085E574 /* PlacesViewModel.swift in Sources */,
 				F87E90321F275DF00085E574 /* Venue.swift in Sources */,
 				F87E90351F2767690085E574 /* String+UrlFormat.swift in Sources */,
 				F87E902E1F2758930085E574 /* FCPConstants.swift in Sources */,
@@ -379,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F87E90371F2783FD0085E574 /* StringExtensionsTests.swift in Sources */,
+				F87E907F1F293C980085E574 /* FCPPlacesViewModel.swift in Sources */,
 				F87E90261F2749F20085E574 /* FCPApiClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
