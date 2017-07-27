@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F80FC5EA1F294A86007E8920 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80FC5E91F294A86007E8920 /* Dynamic.swift */; };
+		F81320371F29DE3400E546E8 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81320361F29DE3400E546E8 /* PlacesViewController.swift */; };
 		F87E90211F27486A0085E574 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E901E1F27486A0085E574 /* Alamofire.framework */; };
 		F87E90221F27486A0085E574 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E901F1F27486A0085E574 /* AlamofireObjectMapper.framework */; };
 		F87E90231F27486A0085E574 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E90201F27486A0085E574 /* ObjectMapper.framework */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		F80FC5E91F294A86007E8920 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dynamic.swift; path = Types/Dynamic.swift; sourceTree = "<group>"; };
+		F81320361F29DE3400E546E8 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesViewController.swift; path = Views/PlacesViewController.swift; sourceTree = "<group>"; };
 		F87E901E1F27486A0085E574 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F87E901F1F27486A0085E574 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		F87E90201F27486A0085E574 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		F87E907D1F293BD20085E574 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F81320361F29DE3400E546E8 /* PlacesViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				F87E903B1F279E5F0085E574 /* Group.swift in Sources */,
 				F80FC5EA1F294A86007E8920 /* Dynamic.swift in Sources */,
 				F87E902B1F274AA50085E574 /* FCPApi.swift in Sources */,
+				F81320371F29DE3400E546E8 /* PlacesViewController.swift in Sources */,
 				F87E903D1F27A0770085E574 /* Location.swift in Sources */,
 				F87E90811F2946390085E574 /* PlacesViewModel.swift in Sources */,
 				F87E90321F275DF00085E574 /* Venue.swift in Sources */,
@@ -546,7 +550,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FindCoolPlaces/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,7 +568,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FindCoolPlaces/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";

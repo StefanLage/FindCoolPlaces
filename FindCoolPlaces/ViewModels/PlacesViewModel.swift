@@ -17,7 +17,6 @@ class PlacesViewModel: NSObject {
         
         self.venues = Dynamic([Venue?]())
     }
-
 }
 
 extension PlacesViewModel{
