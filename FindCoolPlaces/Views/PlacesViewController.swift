@@ -27,7 +27,7 @@ class PlacesViewController: UIViewController {
         guard self.viewModel != nil else {
             return
         }
-        self.viewModel?.venues.bindAndFire(listener: self.listener(venues:))
+        self.viewModel?.places.bindAndFire(listener: self.listener(places:))
         // Show the view below the navigation bar
         self.edgesForExtendedLayout = []
         self.configure()
@@ -95,8 +95,8 @@ class PlacesViewController: UIViewController {
 private typealias PlacesViewControllerViewModel = PlacesViewController
 extension PlacesViewControllerViewModel{
     
-    func listener(venues: [Venue?]) -> (){
-        print (venues)
+    func listener(places: [PlaceViewModel?]) -> (){
+        print (places)
     }
 }
 

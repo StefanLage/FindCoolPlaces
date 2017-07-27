@@ -10,12 +10,12 @@ import Foundation
 
 class PlacesViewModel: NSObject {
 
-    internal(set) public var venues: Dynamic<[Venue?]>!
+    internal(set) public var places: Dynamic<[PlaceViewModel?]>!
 
     override init () {
         super.init()
         
-        self.venues = Dynamic([Venue?]())
+        self.places = Dynamic([PlaceViewModel?]())
     }
 }
 
@@ -49,7 +49,10 @@ extension PlacesViewModelPublic {
      Update places source
 
      */
-    func updateVenues(places : [Venue?]) {
-        self.venues.value = places
+    func updateVenues(places : [Venue]) {
+        self.places.value = places.map ({
+            (venue: Venue) -> PlaceViewModel in
+            return PlaceViewModel(place: venue)
+        })
     }
 }

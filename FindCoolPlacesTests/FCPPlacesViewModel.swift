@@ -30,15 +30,15 @@ class FCPPlacesViewModel: XCTestCase {
         XCTAssertEqual(fancyPlaces.count, 2, "Should have 2 venues")
         let placesViewModel = PlacesViewModel()
         
-        placesViewModel.venues.bindAndFire(listener:{
+        placesViewModel.places.bindAndFire(listener:{
             (venues) in
             guard venues.count > 0 else{
                 return
             }
-            XCTAssertTrue(venues.first as AnyObject? === fancyPlaces.first as AnyObject?, "1st places should point to the same address")
-            XCTAssertTrue(venues.last as AnyObject? === fancyPlaces.last as AnyObject?, "2nd places should point to the same reference")
+            XCTAssertEqual(venues.count, 2, "We should have two place VM")
+            XCTAssertEqual((venues.first!!).titleText, "Oxford Circus", "It's title should be Oxford!!!")
         })
         
-        placesViewModel.updateVenues(places: fancyPlaces)
+        placesViewModel.updateVenues(places: fancyPlaces as! [Venue])
     }
 }
