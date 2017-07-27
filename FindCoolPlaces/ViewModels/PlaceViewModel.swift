@@ -15,6 +15,14 @@ class PlaceViewModel: NSObject {
     var titleText: String?{
         return self.place?.name
     }
+    
+    var longitude: Double?{
+        return self.place?.location?.longitude
+    }
+    
+    var latitude: Double?{
+        return self.place?.location?.latitude
+    }
 
     init (place: Venue){
         self.place = place

@@ -27,5 +27,7 @@ class FCPPlaceViewModel: XCTestCase {
 
         let placeViewModel = PlaceViewModel(place: coolPlace)
         XCTAssertEqual(placeViewModel.titleText, "Oxford Circus")
+        XCTAssertEqual(placeViewModel.latitude, 51.515419)
+        XCTAssertEqual(placeViewModel.longitude, -0.141099)
     }
 }
