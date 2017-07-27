@@ -7,24 +7,21 @@
 //
 
 import Foundation
+import MapKit
 
 class PlaceViewModel: NSObject {
 
     private(set) public var place: Venue?
 
-    var titleText: String?{
+    var titleText: String? {
         return self.place?.name
     }
-    
-    var longitude: Double?{
-        return self.place?.location?.longitude
-    }
-    
-    var latitude: Double?{
-        return self.place?.location?.latitude
+
+    var coordinate: CLLocationCoordinate2D? {
+        return CLLocationCoordinate2DMake((self.place?.location?.latitude)!, (self.place?.location?.longitude)!)
     }
 
-    init (place: Venue){
+    init (place: Venue) {
         self.place = place
     }
 }
