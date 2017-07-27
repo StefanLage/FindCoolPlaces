@@ -16,9 +16,18 @@ class PlacesViewController: UIViewController {
     // Location management
     let locationManager = CLLocationManager()
     var mapView: MKMapView!
+    
+    // Search places controller
+    var searchController: UISearchController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Bind the VM
+        assert (self.viewModel != nil, "Kill it if we don't have any VM")
+        guard self.viewModel != nil else {
+            return
+        }
+        self.viewModel?.venues.bindAndFire(listener: self.listener(venues:))
         // Show the view below the navigation bar
         self.edgesForExtendedLayout = []
         self.configure()
@@ -48,11 +57,21 @@ class PlacesViewController: UIViewController {
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestLocation()
 
-        // Set up
+        // Set up the map
         self.mapView = MKMapView()
         self.mapView!.showsUserLocation = true
         self.mapView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.mapView)
+
+        // Define the searchbar
+        self.searchController = UISearchController(searchResultsController: self)
+        self.searchController.searchResultsUpdater = self
+        let searchBar = self.searchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = self.searchController?.searchBar
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        definesPresentationContext = true
     }
     
     /**
@@ -72,10 +91,18 @@ class PlacesViewController: UIViewController {
     }
 }
 
+// MARK: - Binding method to View model
+private typealias PlacesViewControllerViewModel = PlacesViewController
+extension PlacesViewControllerViewModel{
+    
+    func listener(venues: [Venue?]) -> (){
+        print (venues)
+    }
+}
+
 // MARK: - Location manager delegate
 private typealias PlacesViewControllerLocationDelegate = PlacesViewController
 extension PlacesViewControllerLocationDelegate: CLLocationManagerDelegate{
-
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Swift.Error) {
         print("error:: \(error.localizedDescription)")
     }
@@ -99,5 +126,19 @@ extension PlacesViewControllerLocationDelegate: CLLocationManagerDelegate{
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             self.mapView.setRegion(region, animated: true)
         }
+    }
+}
+
+// MARK: - Search places delegate
+private typealias PlacesViewControllerSearchDelegate = PlacesViewController
+extension PlacesViewControllerSearchDelegate: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        assert (viewModel != nil, "Kill it if we don't have any VM")
+        guard viewModel != nil,
+            let placeText = searchController.searchBar.text else {
+            return
+        }
+        // Send location
+        self.viewModel?.findPlaces(location: placeText)
     }
 }

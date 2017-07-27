@@ -39,7 +39,11 @@ extension PlacesViewModel{
             self.updateVenues(places: venues!)
         }
     }
+}
 
+// MARK: - Public methods
+private typealias PlacesViewModelPublic = PlacesViewModel
+extension PlacesViewModelPublic {
     /**
 
      Update places source
