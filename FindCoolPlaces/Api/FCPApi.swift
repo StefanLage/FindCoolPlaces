@@ -64,7 +64,7 @@ extension BPPublicApiNetwork{
             Constants.ApiParameters.clientSecretKey: Constants.ApiParameters.clientSecretValue,
             Constants.ApiParameters.versionKey: Constants.ApiParameters.versionValue,
             Constants.ApiParameters.nearKey: location,
-            Constants.ApiParameters.limitKey: "2"
+            Constants.ApiParameters.limitKey: "10"
         ]
         // Make the endPoint
         let endPoint = String.FoursquareUrlFormat(endPoint: Constants.EndPoints.explore, parameters: parameters)

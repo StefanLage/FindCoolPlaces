@@ -13,7 +13,7 @@ struct Constants {
         static let baseUrl = "https://api.foursquare.com/v2/"
     }
     struct ApiParameters{
-        // NEVER HARDCOdE THESE!!!!
+        // NEVER HARDCODE THOSE!!!!
         static let clientIdKey = "client_id"
         static let clientIdValue = "TE1KLATJ4KB5RPZYPUPXLWZMUUN51Q3KPYF3L4MUPTNGCRYN"
         static let clientSecretKey = "client_secret"
@@ -25,5 +25,11 @@ struct Constants {
     }
     struct EndPoints{
         static let explore = "venues/explore"
+    }
+    struct ReusableValues{
+        static let pin = "reusablePin"
+    }
+    struct Text{
+        static let FCPSearchBarPlaceHolder = "Search for places"
     }
 }
