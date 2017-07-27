@@ -1,14 +1,14 @@
 //
-//  FindCoolPlacesUITests.swift
-//  FindCoolPlacesUITests
+//  FCPWorkFlowTests.swift
+//  FindCoolPlaces
 //
-//  Created by Stefan Lage on 24/07/2017.
+//  Created by Stefan Lage on 27/07/2017.
 //  Copyright © 2017 Stefan Lage. All rights reserved.
 //
 
 import XCTest
 
-class FindCoolPlacesUITests: XCTestCase {
+class FCPWorkFlowTests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,9 +28,18 @@ class FindCoolPlacesUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWorkFlow() {
+        let app = XCUIApplication()
+        let searchForPlacesSearchField = app.navigationBars["FindCoolPlaces.PlacesView"].searchFields["Search for places"]
+        searchForPlacesSearchField.tap()
+        // Go to London and find some places
+        searchForPlacesSearchField.typeText("London")
+        app.otherElements["National Gallery"].tap()
+        let popoverdismissregionElement = app.otherElements["PopoverDismissRegion"]
+        popoverdismissregionElement.tap()
+        // Now go to San francisco
+        searchForPlacesSearchField.buttons["Clear text"].tap()
+        searchForPlacesSearchField.typeText("San Francisco")
     }
     
 }
