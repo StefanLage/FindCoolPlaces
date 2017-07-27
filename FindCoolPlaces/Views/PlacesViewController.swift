@@ -150,7 +150,6 @@ extension PlacesViewController: UISearchResultsUpdating{
 
 extension PlacesViewController : MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
-        assert(!(annotation is MKUserLocation), "Should not have any user location here!")
         guard !(annotation is MKUserLocation) else {
             return nil
         }
