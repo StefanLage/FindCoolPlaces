@@ -1,9 +1,9 @@
 # FindCoolPlaces
-[![Build Status](https://travis-ci.org/StefanLage/FindCoolPlaces.svg?branch=Dev)](https://travis-ci.org/StefanLage/FindCoolPlaces)
+[![Build Status](https://travis-ci.org/StefanLage/FindCoolPlaces.svg?branch=master)](https://travis-ci.org/StefanLage/FindCoolPlaces)
 
 ## Requirements
 
-* iOS 8.0+
+* iOS 9.0+
 
 ## Installation
 * Install Carthage 0.17.0 or later
