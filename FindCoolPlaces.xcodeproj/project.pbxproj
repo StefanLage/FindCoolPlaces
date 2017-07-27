@@ -11,6 +11,7 @@
 		F81320371F29DE3400E546E8 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81320361F29DE3400E546E8 /* PlacesViewController.swift */; };
 		F81320391F29F59700E546E8 /* FCPPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81320381F29F59700E546E8 /* FCPPlaceViewModel.swift */; };
 		F813203B1F29F6A400E546E8 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813203A1F29F6A400E546E8 /* PlaceViewModel.swift */; };
+		F813203E1F2A0A2D00E546E8 /* FCPWorkFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F813203D1F2A0A2D00E546E8 /* FCPWorkFlowTests.swift */; };
 		F87E90211F27486A0085E574 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E901E1F27486A0085E574 /* Alamofire.framework */; };
 		F87E90221F27486A0085E574 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E901F1F27486A0085E574 /* AlamofireObjectMapper.framework */; };
 		F87E90231F27486A0085E574 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87E90201F27486A0085E574 /* ObjectMapper.framework */; };
@@ -52,6 +53,8 @@
 		F81320361F29DE3400E546E8 /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesViewController.swift; path = Views/PlacesViewController.swift; sourceTree = "<group>"; };
 		F81320381F29F59700E546E8 /* FCPPlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPPlaceViewModel.swift; sourceTree = "<group>"; };
 		F813203A1F29F6A400E546E8 /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceViewModel.swift; path = ViewModels/PlaceViewModel.swift; sourceTree = "<group>"; };
+		F813203C1F2A0A2C00E546E8 /* FindCoolPlacesUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindCoolPlacesUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F813203D1F2A0A2D00E546E8 /* FCPWorkFlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCPWorkFlowTests.swift; sourceTree = "<group>"; };
 		F87E901E1F27486A0085E574 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F87E901F1F27486A0085E574 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		F87E90201F27486A0085E574 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				F8DADD211F26705000432E03 /* Info.plist */,
+				F813203D1F2A0A2D00E546E8 /* FCPWorkFlowTests.swift */,
+				F813203C1F2A0A2C00E546E8 /* FindCoolPlacesUITests-Bridging-Header.h */,
 			);
 			path = FindCoolPlacesUITests;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 					F8DADD1A1F26705000432E03 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 3XG2NZNAV2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F8DADCFB1F26705000432E03;
 					};
@@ -423,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F813203E1F2A0A2D00E546E8 /* FCPWorkFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,11 +638,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3XG2NZNAV2;
 				INFOPLIST_FILE = FindCoolPlacesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlacesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FindCoolPlacesUITests/FindCoolPlacesUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FindCoolPlaces;
 			};
@@ -645,11 +655,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3XG2NZNAV2;
 				INFOPLIST_FILE = FindCoolPlacesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefanlage.FindCoolPlacesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FindCoolPlacesUITests/FindCoolPlacesUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FindCoolPlaces;
 			};

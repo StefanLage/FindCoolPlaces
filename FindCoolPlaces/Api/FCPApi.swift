@@ -58,12 +58,16 @@ extension BPPublicApiNetwork{
 
      */
     func explore (location: String, completion: ((Array<Venue>?, Error?) -> Void)?){
+        // Support UTF8 format -> accept location with spaces for instance
+        guard let locationUtf8 = location.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) else {
+            return
+        }
         // Define all parameter for this request
         let parameters = [
             Constants.ApiParameters.clientIdKey : Constants.ApiParameters.clientIdValue,
             Constants.ApiParameters.clientSecretKey: Constants.ApiParameters.clientSecretValue,
             Constants.ApiParameters.versionKey: Constants.ApiParameters.versionValue,
-            Constants.ApiParameters.nearKey: location,
+            Constants.ApiParameters.nearKey: locationUtf8,
             Constants.ApiParameters.limitKey: "10"
         ]
         // Make the endPoint
