@@ -59,18 +59,20 @@ class PlacesViewController: UIViewController {
 
         // Set up the map
         self.mapView = MKMapView()
+        self.mapView!.delegate = self
         self.mapView!.showsUserLocation = true
         self.mapView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.mapView)
 
         // Define the searchbar
-        self.searchController = UISearchController(searchResultsController: self)
+        self.searchController = UISearchController(searchResultsController: nil)
         self.searchController.searchResultsUpdater = self
         let searchBar = self.searchController!.searchBar
         searchBar.sizeToFit()
-        searchBar.placeholder = "Search for places"
+        searchBar.placeholder = Constants.Text.FCPSearchBarPlaceHolder
         navigationItem.titleView = self.searchController?.searchBar
         self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
     }
     
@@ -96,13 +98,17 @@ private typealias PlacesViewControllerViewModel = PlacesViewController
 extension PlacesViewControllerViewModel{
     
     func listener(places: [PlaceViewModel?]) -> (){
-        print (places)
+        guard places.count > 0 else {
+            // Do nothing
+            return
+        }
+//        print (places[0]?.titleText)
+        self.addNewPlaces(places: places as! [PlaceViewModel])
     }
 }
 
 // MARK: - Location manager delegate
-private typealias PlacesViewControllerLocationDelegate = PlacesViewController
-extension PlacesViewControllerLocationDelegate: CLLocationManagerDelegate{
+extension PlacesViewController: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Swift.Error) {
         print("error:: \(error.localizedDescription)")
     }
@@ -122,7 +128,7 @@ extension PlacesViewControllerLocationDelegate: CLLocationManagerDelegate{
         
         if let location = locations.first {
             // Zoom on current location
-            let span = MKCoordinateSpanMake(0.05, 0.05)
+            let span = MKCoordinateSpanMake(0.1, 0.1)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             self.mapView.setRegion(region, animated: true)
         }
@@ -130,8 +136,7 @@ extension PlacesViewControllerLocationDelegate: CLLocationManagerDelegate{
 }
 
 // MARK: - Search places delegate
-private typealias PlacesViewControllerSearchDelegate = PlacesViewController
-extension PlacesViewControllerSearchDelegate: UISearchResultsUpdating{
+extension PlacesViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         assert (viewModel != nil, "Kill it if we don't have any VM")
         guard viewModel != nil,
@@ -140,5 +145,47 @@ extension PlacesViewControllerSearchDelegate: UISearchResultsUpdating{
         }
         // Send location
         self.viewModel?.findPlaces(location: placeText)
+    }
+}
+
+extension PlacesViewController : MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+        assert(!(annotation is MKUserLocation), "Should not have any user location here!")
+        guard !(annotation is MKUserLocation) else {
+            return nil
+        }
+        let reuseId = Constants.ReusableValues.pin
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+        }
+        pinView?.pinTintColor = UIColor.red
+        pinView?.canShowCallout = true
+
+        return pinView
+    }
+
+    /**
+
+     Create annotation and add them to the map
+
+     */
+    internal func addNewPlaces(places: [PlaceViewModel])
+    {
+        // clear the map
+        self.mapView.removeAnnotations(self.mapView.annotations)
+        guard places.count > 0 else{
+            // Don't do anything
+            return
+        }
+        for (_, place) in places.enumerated() {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = place.coordinate!
+            annotation.title = place.titleText
+            // Add it to the map
+            self.mapView.addAnnotation(annotation)
+        }
+        // Make sure all annotation are visible on the map
+        self.mapView.showAnnotations(self.mapView.annotations, animated: true)
     }
 }

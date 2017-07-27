@@ -26,4 +26,10 @@ struct Constants {
     struct EndPoints{
         static let explore = "venues/explore"
     }
+    struct ReusableValues{
+        static let pin = "reusablePin"
+    }
+    struct Text{
+        static let FCPSearchBarPlaceHolder = "Search for places"
+    }
 }
